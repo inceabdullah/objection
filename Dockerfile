@@ -9,7 +9,7 @@ RUN apt update &&\
 
 RUN wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip &&\
   unzip platform-tools-latest-linux.zip &&\
-  ln -s /app/Downloads/platform-tools/adb /usr/bin/
+  ln -s /app/platform-tools/adb /usr/bin/
 
 RUN pip install -r requirements.txt &&\
   python setup.py install
